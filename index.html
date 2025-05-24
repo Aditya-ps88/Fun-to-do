@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fun To-Do App</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="heading">Fun To-Do App</div>
+
+  <div class="important-task-box">
+    <h2>Add Important Task</h2>
+    <textarea id="important-task-text" placeholder="Enter task..."></textarea>
+    <input type="date" id="important-task-date" />
+    <button onclick="addImportantTask()">Add Task</button>
+
+    <ul class="important-tasks-list" id="important-tasks-list"></ul>
+  </div>
+
+  <div class="completed-task-box">
+    <h2>Completed Tasks</h2>
+    <ul class="completed-tasks-list" id="completed-tasks-list"></ul>
+
+    <div class="completed-task-controls">
+      <button onclick="clearCompletedTasks()">Clear All</button>
+    </div>
+  </div>
+
+  <h1>Categories</h1>
+  <div class="categories">
+ <div class="category-box" id="category-Study" onclick="location.href='category-Study.html'">
+  <div class="category-title">📕Study</div>
+  <div class="task-count" id="count-Study">0 remaining</div>
+  <button class="randomizer" data-category="Study">Pick Random</button>
+</div>
+
+<div class="category-box" id="category-Shopping" onclick="location.href='category-Shopping.html'">
+  <div class="category-title">🛒Shopping</div>
+  <div class="task-count" id="count-Shopping">0 remaining</div>
+  <button class="randomizer" data-category="Shopping">Pick Random</button>
+</div>
+
+<div class="category-box" id="category-Travel" onclick="location.href='category-Travel.html'">
+  <div class="category-title">✈️Travel</div>
+  <div class="task-count" id="count-Travel">0 remaining</div>
+  <button class="randomizer" data-category="Travel">Pick Random</button>
+</div>
+
+<div class="category-box" id="category-Chores" onclick="location.href='category-Chores.html'">
+  <div class="category-title">🧹Chores</div>
+  <div class="task-count" id="count-Chores">0 remaining</div>
+  <button class="randomizer" data-category="Chores">Pick Random</button>
+</div>
+
+<div class="category-box" id="category-Work" onclick="location.href='category-Work.html'">
+  <div class="category-title">💼Work</div>
+  <div class="task-count" id="count-Work">0 remaining</div>
+  <button class="randomizer" data-category="Work">Pick Random</button>
+</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

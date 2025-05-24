@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>✈️Travel Tasks - Fun To-Do App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="heading">✈️Travel Tasks</div>
+
+  <div class="important-task-box">
+    <textarea id="task-text" placeholder="Enter Travel task..."></textarea>
+    <input type="date" id="task-date" />
+    <button onclick="addTask()">Add Task</button>
+  </div>
+
+  <h2>Pending Tasks</h2>
+  <ul id="task-list" class="important-tasks-list"></ul>
+
+  <h2>Completed Tasks</h2>
+  <ul id="completed-list" class="completed-tasks-list"></ul>
+  <div class="completed-task-controls">
+    <button onclick="clearCompleted()">Clear Completed</button>
+  </div>
+<br>
+  <button class="randomizer" onclick="pickRandom()">Pick Random Task</button>
+
+  <script src="category-travel.js"></script>
+</body>
+</html>
